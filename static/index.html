@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>퐝퐝한 메모</title>
+  </head>
+
+  <body>
+    <form id="memo-form">
+      <label for="memo-input">메모를 입력하세요</label>
+      <input
+        id="memo-input"
+        type="text"
+        placeholder="여기에 메모를 입렬해주세요"
+        required
+      />
+      <button id="memo-submit" type="submit">생성</button>
+    </form>
+
+    <!-- ul태그 밑에 li 태그를 붙이면 당구공 표시로 리스트 됨 / ol태그 밑에 li를 붙이면 숫자로 리스트 됨 -->
+    <ul id="memo-ul"></ul>
+
+    <script src="app.js"></script>
+  </body>
+</html>
