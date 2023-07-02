@@ -45,7 +45,7 @@ function displayMemo(memo) {
 
 //서버에서 가져오는 get (CRUD중 R])
 async function readMemo() {
-  const res = await fetch("/memos");
+  const res = await fetch("/memos"); // <- fetch기본이 get 임
   const jsonRes = await res.json();
   //jsonRes -> [{id:123, constent:'불라불라'}]
   const ul = document.querySelector("#memo-ul");
